@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ToDo;Assembly=ToDo" x:Class="ToDo.ListTasksPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:DateTimeConverter 
+                x:Key="dtConverter">
+            </local:DateTimeConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+        
+        <StackLayout Padding="30">
+            <ListView
+                ItemTapped="OnSelected"
+                ItemsSource="{Binding ToDoItems}"
+                x:Name="ToDoList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Padding="5" Spacing="1">
+                                    <Label 
+                                        x:Name="TaskNameDisplay"
+                                        Text="{Binding TaskName}"
+                                        FontSize="12"
+                                        TextColor="Red">
+                                    </Label>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label 
+                                            FontSize="10"
+                                            Text="Priority: ">
+                                        </Label>
+                                        <Label
+                                            Text="{Binding Priority}"
+                                            FontSize="10">
+                                        </Label>
+                                        <Label 
+                                            FontSize="10"
+                                            Text="Due: ">
+                                        </Label>
+                                        <Label
+                                            Text="{Binding DueDate}"
+                                            FontSize="10">
+                                        </Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+</ContentPage>

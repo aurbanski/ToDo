@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{FB80630D-F338-40C6-887D-74AE5B1813E7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDo/View/ListTasksPage.xaml">
+    <Files>
+      <File FileName="ToDo/View/ListTasksPage.xaml" Line="54" Column="1" />
+      <File FileName="ToDo/Helpers/DateTimeConverter.cs" Line="22" Column="47" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ToDo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1B2E03E5-7D0E-4628-A23B-A181C069008D" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ToDo.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+</Properties>
